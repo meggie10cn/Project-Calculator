@@ -1,0 +1,75 @@
+
+div.well{
+    margin: auto;
+    width:60%;
+}
+div.ACbody{
+    margin: auto;
+    width:60%;
+}
+#keywordSection {
+    color: #8c0000;
+    font-style: bold;
+    font-size: 14px;
+}
+
+table.startend{
+    position:relative;
+    left:50px;
+}
+table.reschedule{
+    position: relative;
+    right:50px;
+}
+div.container {
+    margin:auto;
+    width:60%;
+}
+button.accordion {
+    background-color: #d3d3d3;
+    color:#8c0000;
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;
+    border-style: solid;
+    border-radius: 15px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    
+    background-color: #0078B8; 
+    color: white;
+    
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 20px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    border-radius: 15px;
+    max-height: 0;
+    font-size:16px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
